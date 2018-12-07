@@ -20,15 +20,17 @@ public class Controller {
         double w = Double.parseDouble(weight.getText());
         double h = Double.parseDouble(height.getText());
         double bmi = w / (h * h);
-        String rat;
-        if (bmi < 20)  rat = "Underweight";
-         else
-            if (bmi < 25) rat = "Normal";
-         else
-            if (bmi < 30) rat = "Overweight";
-        else rat = "obese";
 
-    result.setText("Your BMI is " + String.format("%.2f", bmi));
-    rating.setText(rat);
+        result.setText("Your BMI is " + String.format("%.2f", bmi));
+
+        if (bmi < 20)  rating.setText("Underweight");
+         else
+            if (bmi < 25) rating.setText("Normal");
+         else
+            if (bmi < 30) rating.setText("Overweight");
+        else rating.setText("Obese");
+
+
+
     }
 }
