@@ -31,9 +31,10 @@
             <Label text="Height" GridPane.rowIndex="1" />
             <TextField fx:id="weight" GridPane.columnIndex="1" />
             <TextField fx:id="height" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="calculate"  onAction="#clickAction" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="calculate" onAction="#clickAction" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="2">
             </Button>
             <Label fx:id="result" GridPane.rowIndex="3" />
+            <Label fx:id="rating" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </children>
